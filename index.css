@@ -1,0 +1,99 @@
+img {
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    
+  }
+  #header-img {
+    top: 10px;
+  }
+  
+  header { 
+  border: dotted;  
+  background: skyblue;  
+  height: 15%;
+  width: 100%;
+  padding: 10px 10px;
+  position: fixed;
+  text-align: right; 
+  opacity: 75%;
+  font-size: 15px;
+  }
+  
+  h1 {
+    text-align: center;
+    color:black;
+  }
+  body {
+    color: white;
+    font-size: 20px;
+  }
+  
+  
+  footer {
+   border: 5px solid;
+   background: linear-gradient(
+        135deg,
+        magenta 100px,
+        cyan 180px,
+        lime 300px,
+        yellow 350px
+      );
+      text-align: right;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: white;
+    filter: brightness(150%);
+  }
+  #background {
+      width: 120%; 
+      height: 120%; 
+      position: fixed; 
+      left: 0px; 
+      top: 0px; 
+      z-index: -1;
+  }
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    text-align: left;
+  }
+  
+  h5 {
+    color: #ffffff
+  }
+  
+  .section {
+    font-size: 30px;
+    color: lime;
+  }
+  
+  #fashion {
+    width: 50%;
+    height: 35%;
+  }
+  
+  
+  @media only screen and (max-width: 800px){
+    body {
+    flex-wrap: wrap;
+    }
+  
+    input {
+      display: box;
+      border-radius: 10px;
+      color: red;
+      background: skyblue;
+    }
+    input:hover {
+      background: gold;
+    }
+    .nav-link {
+      font-size: 25px;
+      color: indigo;
+    }}
