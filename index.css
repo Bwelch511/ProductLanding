@@ -1,29 +1,32 @@
 img {
-    height: 100%;
-    max-width: 100%;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    display: flex;
     
-  }
-  #header-img {
-    top: 10px;
   }
   
   header { 
   border: dotted;  
   background: skyblue;  
   height: 15%;
-  width: 100%;
+  width: 100vw;
   padding: 10px 10px;
-  position: fixed;
-  text-align: right; 
+  position: fixed; 
   opacity: 75%;
   font-size: 15px;
+  text-align: center;
+  }
+  #header-img {
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    margin-top: -80px;
   }
   
   h1 {
     text-align: center;
     color:black;
+    font-family: 'Staatliches', cursive;
   }
   body {
     color: white;
@@ -44,14 +47,15 @@ img {
   }
   a {
     color: black;
+    font-size: 25px;
   }
   a:hover {
     color: white;
     filter: brightness(150%);
   }
   #background {
-      width: 120%; 
-      height: 120%; 
+      width: 100vw; 
+      height: 120vh; 
       position: fixed; 
       left: 0px; 
       top: 0px; 
@@ -65,17 +69,53 @@ img {
   }
   
   h5 {
-    color: #ffffff
+    color: #ffffff;
   }
   
   .section {
+    height: 40vh;
+    width: auto;
     font-size: 30px;
     color: lime;
   }
+  #section2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 90%;
+    margin: auto;
+  }
+  .pbx{
+    height: 25vh;
+    width: 25vw;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-row-start: 2;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+  .pbximg {
+    width: 25%;
+    height: 18%;
+  }
+  #section3{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 90%;
+    margin: auto;
+  }
+  .fbx{
+    height: 25vh;
+    width: 25vw;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-row-start: 2;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
   
-  #fashion {
-    width: 50%;
-    height: 35%;
+  .fashionpic {
+    width: 25%;
+    height: 25%;
   }
   
   
@@ -83,7 +123,6 @@ img {
     body {
     flex-wrap: wrap;
     }
-  
     input {
       display: box;
       border-radius: 10px;
@@ -95,5 +134,5 @@ img {
     }
     .nav-link {
       font-size: 25px;
-      color: indigo;
+      color: white;
     }}
